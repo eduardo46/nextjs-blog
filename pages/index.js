@@ -4,6 +4,13 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
+import {
+  Container,
+  Button,
+  Input,
+  Spacer,
+  Text,
+} from '@nextui-org/react';
 
 export default function Home({ allPostsData }) {
   return (
@@ -33,6 +40,9 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+        <Button flat color="secondary" auto>
+          ¡¡Presiona meeee!!
+        </Button>
       </section>
     </Layout>
   );
@@ -45,3 +55,4 @@ export async function getStaticProps() {
     },
   };
 }
+
