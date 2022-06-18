@@ -40,6 +40,17 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+        <ul className={utilStyles.list}>
+            <li className={utilStyles.listItem} key={3}>
+              <Link href={`/posts/breakout`}>
+                <a>{'BreakOut Game'}</a>
+              </Link>
+              <br />
+              <small className={utilStyles.lightText}>
+                <Date dateString={'2020-01-02'} />
+              </small>
+            </li>
+        </ul>
         <Button flat color="secondary" auto>
           ¡¡Presiona meeee!!
         </Button>
